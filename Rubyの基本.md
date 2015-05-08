@@ -41,3 +41,81 @@ irb(main):010:0> array.length
 irb(main):011:0> array.size
 => 6
 ```
+
+## Hashクラス
+
+### ハッシュの生成
+```
+irb(main):012:0> hash = {red: 'eagle', blue: 'shark', yellow: 'panther'}
+=> {:red=>"eagle", :blue=>"shark", :yellow=>"panther"}
+```
+```
+irb(main):013:0> sunbalkan = Hash.new
+=> {}
+irb(main):014:0> sunbalkan[:red] = 'eagle'
+=> "eagle"
+irb(main):015:0> sunbalkan[:blue] = 'shark'
+=> "shark"
+irb(main):016:0> sunbalkan[:yellow] = 'panther'
+=> "panther"
+irb(main):017:0> sunbalkan
+=> {:red=>"eagle", :blue=>"shark", :yellow=>"panther"}
+```
+
+### バリューへのアクセス
+```
+irb(main):018:0> hash[:red]
+=> "eagle"
+```
+
+## イテレータ
+
+### Arrayクラスをイテレータで回す
+```
+irb(main):027:0> array.each do |i|
+irb(main):028:1*   puts i
+irb(main):029:1> end
+1
+two
+one
+2
+four
+5
+six
+=> [1, "two", ["one", 2], :four, 5, "six"]
+```
+
+### Hashクラスをイテレータで回す(キー、バリュー)
+```
+irb(main):023:0> hash.each do |key, val|
+irb(main):024:1*   puts "key=#{key} value=#{val}"
+irb(main):025:1> end
+key=red value=eagle
+key=blue value=shark
+key=yellow value=panther
+=> {:red=>"eagle", :blue=>"shark", :yellow=>"panther"}
+```
+
+### Hashクラスをイテレータで回す(キーのみ)
+```
+irb(main):047:0> hash.each_key do |key|
+irb(main):048:1*   puts key
+irb(main):049:1> end
+red
+blue
+yellow
+=> {:red=>"eagle", :blue=>"shark", :yellow=>"panther"}
+```
+
+### Hashクラスをイテレータで回す(バリューのみ)
+```
+irb(main):050:0> hash.each_value do |val|
+irb(main):051:1*   puts val
+irb(main):052:1> end
+eagle
+shark
+panther
+=> {:red=>"eagle", :blue=>"shark", :yellow=>"panther"}
+```
+
+
