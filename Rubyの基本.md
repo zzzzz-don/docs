@@ -70,6 +70,8 @@ irb(main):018:0> hash[:red]
 
 ## イテレータ
 
+(参考) http://qiita.com/kidach1/items/651b5b5580be40ad047e
+
 ### Arrayクラスをイテレータで回す
 ```
 irb(main):027:0> array.each do |i|
