@@ -20,3 +20,16 @@ http://localhost:8080/
 ```
 $ /Library/Tomcat/bin/shutdown.sh
 ```
+
+# 余談
+
+## 便利なコマンド
+```
+ishii-no-MacBook-Air:Library don$ /usr/libexec/java_home -V
+Matching Java Virtual Machines (3):
+    1.8.0_45, x86_64:	"Java SE 8"	/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+    1.6.0_65-b14-466.1, x86_64:	"Java SE 6"	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+    1.6.0_65-b14-466.1, i386:	"Java SE 6"	/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+
+/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
+```
